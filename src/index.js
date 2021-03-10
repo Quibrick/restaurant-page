@@ -1,3 +1,3 @@
 import {pageLoader} from './modules/landingPage'
 
-pageLoader();
+window.onload = pageLoader();

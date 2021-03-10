@@ -44,18 +44,35 @@ function navBar(){
 function title(){
     
     const landingPage = document.getElementById("landing-page");
+
     const titleContainer = document.createElement("div");
-    titleContainer.id = 'title-container';
+    titleContainer.id = "title-container";
+
     const restaurant = document.createElement("h2");
+    restaurant.id = "header";
     restaurant.innerHTML = 'Restaurant';
+
     const name = document.createElement("h3");
-    name.innerHTML = 'THE LATERN CAFE';
+    name.id = ("restaurant-name");
+    name.innerHTML = "THE LATERN BISTRO";
+    
+    const hr = document.createElement("hr");
+    hr.id = "restaurant-underline";
+    name.appendChild(hr);
+
     restaurant.appendChild(name);
     titleContainer.appendChild(restaurant);
     landingPage.appendChild(titleContainer);
 }
 
-
+//book table btn functionality
+function bookTableBtn(){
+    const landingPage = document.getElementById("landing-page");
+    const bookTable = document.createElement("BUTTON");
+    bookTable.id = "book-table-btn";
+    bookTable.innerHTML = "BOOK TABLE"
+    landingPage.appendChild(bookTable);
+}
 
 //call on pageLoad and on home click
 function pageLoader(){
@@ -63,6 +80,7 @@ function pageLoader(){
     landingPage();
     navBar();
     title();
+    bookTableBtn();
 }
 
 export {pageLoader};
