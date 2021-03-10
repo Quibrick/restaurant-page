@@ -74,6 +74,11 @@ function bookTableBtn(){
     landingPage.appendChild(bookTable);
 }
 
+function socialMedia(){
+    const landingPage = document.getElementById("landing-page");
+
+}
+
 //call on pageLoad and on home click
 function pageLoader(){
 
