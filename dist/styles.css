@@ -40,9 +40,17 @@
 
 #title-container{
     position: relative;
-    top: 340px;
+    top: 300px;
     width: auto;
     margin: auto;
     text-align: center;
-    border: 3px solid white;
+    color: white
+}
+
+h3{
+    font-size: 80px;
+}
+
+h2{
+    letter-spacing: 10px;
 }

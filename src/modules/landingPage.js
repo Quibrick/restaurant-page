@@ -1,3 +1,4 @@
+// landing page constructor
 function landingPage(){
 
     const content = document.getElementById("content");
@@ -7,6 +8,7 @@ function landingPage(){
 
 }
 
+// nav bar at landing page
 function navBar(){
 
     const landingPage = document.getElementById("landing-page");
@@ -38,6 +40,7 @@ function navBar(){
     landingPage.appendChild(navBar);
 }
 
+// restaurant title at the middle of the page
 function title(){
     
     const landingPage = document.getElementById("landing-page");
@@ -46,13 +49,15 @@ function title(){
     const restaurant = document.createElement("h2");
     restaurant.innerHTML = 'Restaurant';
     const name = document.createElement("h3");
-    name.innerHTML = 'RESTAURANT NAME';
+    name.innerHTML = 'THE LATERN CAFE';
     restaurant.appendChild(name);
     titleContainer.appendChild(restaurant);
     landingPage.appendChild(titleContainer);
 }
 
 
+
+//call on pageLoad and on home click
 function pageLoader(){
 
     landingPage();
