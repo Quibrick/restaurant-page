@@ -1,17 +1,18 @@
+import {socialMediaArray} from './socialMediaArray';
+
 // landing page constructor
-function landingPage(){
+function homePage(){
 
     const content = document.getElementById("content");
-    const landingPage = document.createElement("div");
-    landingPage.id = "landing-page";
-    content.appendChild(landingPage);
-
+    const homePage = document.createElement("div");
+    homePage.id = "home-page";
+    content.appendChild(homePage);
 }
 
 // nav bar at landing page
 function navBar(){
 
-    const landingPage = document.getElementById("landing-page");
+    const homePage = document.getElementById("home-page");
     const navBar = document.createElement("nav");
     navBar.id = "navigation";
 
@@ -37,13 +38,13 @@ function navBar(){
         navBar.append(navButton);
     }
 
-    landingPage.appendChild(navBar);
+    homePage.appendChild(navBar);
 }
 
-// restaurant title at the middle of the page
-function title(){
+// restaurant title and logo at the middle of the page
+function restaurantLogo(){
     
-    const landingPage = document.getElementById("landing-page");
+    const homePage = document.getElementById("home-page");
 
     const titleContainer = document.createElement("div");
     titleContainer.id = "title-container";
@@ -62,30 +63,49 @@ function title(){
 
     restaurant.appendChild(name);
     titleContainer.appendChild(restaurant);
-    landingPage.appendChild(titleContainer);
+    homePage.appendChild(titleContainer);
 }
 
 //book table btn functionality
 function bookTableBtn(){
-    const landingPage = document.getElementById("landing-page");
+    
+    const homePage = document.getElementById("home-page");
     const bookTable = document.createElement("BUTTON");
     bookTable.id = "book-table-btn";
     bookTable.innerHTML = "BOOK TABLE"
-    landingPage.appendChild(bookTable);
+    homePage.appendChild(bookTable);
 }
 
 function socialMedia(){
-    const landingPage = document.getElementById("landing-page");
+    
+    const homePage = document.getElementById("home-page");
+    
+    const socialTab = document.createElement("div");
+    socialTab.id = "social-media";
 
+    let socialMedia = socialMediaArray("facebook", "twitter", "instagram");
+    let socialMediaLength = socialMedia.length;
+
+
+    for (let i = 0; i < socialMediaLength; i++){
+
+        const anchor = document.createElement("a");
+        anchor.id = socialMedia[i].id;
+        anchor.href = socialMedia[i].link;
+        socialTab.append(anchor);
+    }
+
+    homePage.appendChild(socialTab);
 }
 
 //call on pageLoad and on home click
 function pageLoader(){
 
-    landingPage();
+    homePage();
     navBar();
-    title();
+    restaurantLogo();
     bookTableBtn();
+    socialMedia();
 }
 
 export {pageLoader};

@@ -1,4 +1,4 @@
-import {pageLoader} from './modules/landingPage'
+import {pageLoader} from './modules/homePage'
 import {clearWindow} from './modules/clearWindow';
 
 window.onload = pageLoader();
