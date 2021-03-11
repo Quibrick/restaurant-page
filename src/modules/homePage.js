@@ -1,45 +1,6 @@
 import {socialMediaArray} from './socialMediaArray';
-
-// landing page constructor
-function pageCreator(id){
-
-    const content = document.getElementById("content");
-    const homePage = document.createElement("div");
-    homePage.id = id;
-    content.appendChild(homePage);
-}
-
-// nav bar at landing page
-function navBar(){
-
-    const homePage = document.getElementById("home-page");
-    const navBar = document.createElement("nav");
-    navBar.id = "navigation";
-
-    let navBarContent = [
-
-        'HOME',
-
-        'ABOUT',
-        
-        'BOOKINGS',
-
-        'MENU',
-
-        'CONTACT'
-    ];
-
-    for (let items of navBarContent){
-
-        const navButton = document.createElement("BUTTON");
-        navButton.classList.add("navigation-btn");
-        navButton.id = `${items.toLowerCase()}-btn`;
-        navButton.innerHTML = items;
-        navBar.append(navButton);
-    }
-
-    homePage.appendChild(navBar);
-}
+import {pageCreator} from './pageViewCreator';
+import {navBar} from './navBar';
 
 // restaurant title and logo at the middle of the page
 function restaurantLogo(){
@@ -101,8 +62,8 @@ function socialMedia(){
 //call on pageLoad and on home click
 function homePageLoader(){
 
-    pageCreator('home-page');
-    navBar();
+    pageCreator("home-page");
+    navBar("home-page");
     restaurantLogo();
     bookTableBtn();
     socialMedia();
