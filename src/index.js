@@ -1,7 +1,7 @@
-import {pageLoader} from './modules/homePage'
+import {homePageLoader} from './modules/homePage'
 import {clearWindow} from './modules/clearWindow';
 
-window.onload = pageLoader();
+window.onload = homePageLoader();
 
 const aboutBtn = document.getElementById("about-btn");
 aboutBtn.addEventListener("click", () =>{

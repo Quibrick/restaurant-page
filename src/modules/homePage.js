@@ -1,11 +1,11 @@
 import {socialMediaArray} from './socialMediaArray';
 
 // landing page constructor
-function homePage(){
+function pageCreator(id){
 
     const content = document.getElementById("content");
     const homePage = document.createElement("div");
-    homePage.id = "home-page";
+    homePage.id = id;
     content.appendChild(homePage);
 }
 
@@ -99,13 +99,13 @@ function socialMedia(){
 }
 
 //call on pageLoad and on home click
-function pageLoader(){
+function homePageLoader(){
 
-    homePage();
+    pageCreator('home-page');
     navBar();
     restaurantLogo();
     bookTableBtn();
     socialMedia();
 }
 
-export {pageLoader};
+export {homePageLoader};
