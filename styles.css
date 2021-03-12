@@ -7,7 +7,7 @@
     width: 100vw;
     height: 100vh;
     background-size: 100vw 100vh;
-    background-image: url("./img/background.jpg");
+    background-image: url("./img/Photo\ by\ Rachel\ Claire\ from\ Pexels.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -80,28 +80,6 @@
 
 }
 
-@media(max-width:640px){
-    #book-table-btn{
-        position: relative;
-        top: 130px; 
-        left: 50%;
-        transform: translateX(-50%);
-        width: 150px;
-        height: 50px;
-        background-color: #BB7E37;
-        border-radius: 5px;
-        border:transparent;
-        outline: none;
-        color: white;
-        font-weight: 900;
-        font-size: 15px;
-        transition: 0.1s;
-        transition-timing-function: ease;
-    
-    }    
-}
-
-
 #book-table-btn:hover{
     border: 2px solid white
 
@@ -152,6 +130,49 @@
     border-radius: 100%;
 }
 
+#about-us-container{
+    display: flex;
+    column-gap: 200px;
+    position: relative;
+    align-items: center;
+    top: 150px;
+}
+
+#about-us{
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    margin-left: 200px;
+}
+
+#bold-description{
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#regular-description{
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+#about-us-photo{
+    background-image: url('./img/Photo\ by\ Michael\ Browning\ on\ Unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 750px;
+    height:500px;
+    box-shadow: 2px 3px 19px 5px rgba(0,0,0,0.41)    ;
+    position: relative;
+}
+
 @media(max-width:640px){
     #title-container{
         position: relative;
@@ -171,4 +192,24 @@
     
 }
 
+@media(max-width:640px){
+    #book-table-btn{
+        position: relative;
+        top: 130px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 50px;
+        background-color: #BB7E37;
+        border-radius: 5px;
+        border:transparent;
+        outline: none;
+        color: white;
+        font-weight: 900;
+        font-size: 15px;
+        transition: 0.1s;
+        transition-timing-function: ease;
+    
+    }    
+}
 
