@@ -1,6 +1,7 @@
 import socialMediaArray from './socialMediaArray';
 import pageCreator from './pageViewCreator';
 import navBar from './navBar';
+import bookTableBtn from './bookTableBtn';
 
 // restaurant title and logo at the middle of the page
 function restaurantLogo(){
@@ -25,16 +26,6 @@ function restaurantLogo(){
     restaurant.appendChild(name);
     titleContainer.appendChild(restaurant);
     homePage.appendChild(titleContainer);
-}
-
-//book table btn functionality
-function bookTableBtn(){
-    
-    const homePage = document.getElementById("home-page");
-    const bookTable = document.createElement("BUTTON");
-    bookTable.id = "book-table-btn";
-    bookTable.innerHTML = "BOOK TABLE"
-    homePage.appendChild(bookTable);
 }
 
 function socialMedia(){

@@ -12,6 +12,10 @@ function aboutUs(){
     aboutUs.id = "about-us";
     aboutUs.innerHTML = "ABOUT US";
 
+    const hr = document.createElement("hr");
+    hr.id = "about-us-hr";
+    aboutUs.appendChild(hr);
+
     const boldDescription = document.createElement("h3");
     boldDescription.id = "bold-description";
     boldDescription.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "

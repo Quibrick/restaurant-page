@@ -3,8 +3,9 @@ import SocialMedia from './socialClass';
 function socialMediaArray(...args) {
     
     let objectArray = [];
+    let argsLength = args.length;
 
-    for (let i = 0; i < args.length; i++){
+    for (let i = 0; i < argsLength; i++){
 
         const object = new SocialMedia(args[i]);
         objectArray.push(object);

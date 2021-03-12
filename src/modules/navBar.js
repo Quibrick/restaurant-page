@@ -14,8 +14,6 @@ function navBar(id){
 
         'ABOUT',
         
-        'BOOKINGS',
-
         'MENU',
 
         'CONTACT'
@@ -45,6 +43,7 @@ function navBar(id){
         clearWindow();
         homePageLoader();
     });
+
 }
 
 
