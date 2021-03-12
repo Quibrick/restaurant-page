@@ -1,4 +1,5 @@
-function clearWindow (){
+//clears the view 
+function clearWindow () {
     document.getElementById("content").innerHTML = "";
 }
 

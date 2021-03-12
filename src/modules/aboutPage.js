@@ -1,7 +1,8 @@
 import pageCreator from './pageViewCreator';
 import navBar from './navBar';
 
-function aboutUs(){
+//about-us view constructor
+function aboutUs() {
 
     const aboutPage = document.getElementById("about-page");
 
@@ -36,9 +37,9 @@ function aboutUs(){
     photo.id = "about-us-photo";
 
     aboutContainer.appendChild(photo)
-    
 }
 
+//called on ABOUT tab click
 function aboutPageLoader(){
     pageCreator('about-page')
     navBar('about-page');

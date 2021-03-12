@@ -1,4 +1,4 @@
-// page view constructor
+// page view constructor so we can append elements to it
 function pageCreator(id){
 
     const content = document.getElementById("content");

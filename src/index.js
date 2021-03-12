@@ -1,5 +1,5 @@
 import homePageLoader from './modules/homePage';
 
-window.onload = homePageLoader(); //change with homepage when finished
+window.onload = homePageLoader(); //on load show homepage
 
 

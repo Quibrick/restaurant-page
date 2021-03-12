@@ -4,7 +4,7 @@ import navBar from './navBar';
 import bookTableBtn from './bookTableBtn';
 
 // restaurant title and logo at the middle of the page
-function restaurantLogo(){
+function restaurantLogo() {
     
     const homePage = document.getElementById("home-page");
 
@@ -28,7 +28,8 @@ function restaurantLogo(){
     homePage.appendChild(titleContainer);
 }
 
-function socialMedia(){
+//social media tab 
+function socialMedia() {
     
     const homePage = document.getElementById("home-page");
     
@@ -38,8 +39,8 @@ function socialMedia(){
     let socialMedia = socialMediaArray("facebook", "twitter", "instagram");
     let socialMediaLength = socialMedia.length;
 
-
-    for (let i = 0; i < socialMediaLength; i++){
+    //create the anchor tags with the appropiate social medias
+    for (let i = 0; i < socialMediaLength; i++) {
 
         const anchor = document.createElement("a");
         anchor.id = socialMedia[i].id;
@@ -51,7 +52,7 @@ function socialMedia(){
 }
 
 //call on pageLoad and on home click
-function homePageLoader(){
+function homePageLoader() {
 
     pageCreator("home-page");
     navBar("home-page");
