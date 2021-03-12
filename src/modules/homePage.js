@@ -1,6 +1,6 @@
-import {socialMediaArray} from './socialMediaArray';
-import {pageCreator} from './pageViewCreator';
-import {navBar} from './navBar';
+import socialMediaArray from './socialMediaArray';
+import pageCreator from './pageViewCreator';
+import navBar from './navBar';
 
 // restaurant title and logo at the middle of the page
 function restaurantLogo(){
@@ -69,4 +69,4 @@ function homePageLoader(){
     socialMedia();
 }
 
-export {homePageLoader};
+export default homePageLoader;

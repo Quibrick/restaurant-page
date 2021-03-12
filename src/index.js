@@ -1,19 +1,6 @@
-import {homePageLoader} from './modules/homePage';
-import {clearWindow} from './modules/clearWindow';
-import {aboutPageLoader} from './modules/aboutPage';
+import aboutPageLoader from './modules/aboutPage';
+import homePageLoader from './modules/homePage';
 
-window.onload = homePageLoader();
+window.onload = aboutPageLoader(); //change with homepage when finished
 
-const aboutBtn = document.getElementById("about-btn");
-aboutBtn.addEventListener("click", () =>{
 
-    clearWindow();
-    aboutPageLoader();
-});
-
-const homeBtn = document.getElementById('home-btn');
-homeBtn.addEventListener('click', () =>{
-
-    clearWindow();
-    homePageLoader();
-})

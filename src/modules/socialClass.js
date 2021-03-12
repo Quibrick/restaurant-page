@@ -7,4 +7,4 @@ class SocialMedia{
     }
 }
 
-export {SocialMedia};
+export default SocialMedia;

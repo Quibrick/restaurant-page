@@ -7,4 +7,4 @@ function pageCreator(id){
     content.appendChild(homePage);
 }
 
-export {pageCreator};
+export default pageCreator;

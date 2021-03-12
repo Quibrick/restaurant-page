@@ -2,4 +2,4 @@ function clearWindow (){
     document.getElementById("content").innerHTML = "";
 }
 
-export {clearWindow};
+export default clearWindow;

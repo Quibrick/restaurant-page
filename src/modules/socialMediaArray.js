@@ -1,4 +1,4 @@
-import {SocialMedia} from './socialClass';
+import SocialMedia from './socialClass';
 
 function socialMediaArray(...args) {
     
@@ -13,4 +13,4 @@ function socialMediaArray(...args) {
     return objectArray;
 }
 
-export {socialMediaArray};
+export default socialMediaArray;
