@@ -1,15 +1,19 @@
+import bookingsPageLoader from "./bookingsPage";
+import clearWindow from "./clearWindow";
+
 //book table btn functionality
-function bookTableBtn(){
+function bookTableBtn(id){
     
-    const homePage = document.getElementById("home-page");
+    const view = document.getElementById(id);
     const bookTable = document.createElement("button");
     bookTable.addEventListener("click", ()=>{
-        console.log("working");
+
+        clearWindow();
+        bookingsPageLoader();
     })
     bookTable.id = "book-table-btn";
     bookTable.innerHTML = "BOOK TABLE"
-    homePage.appendChild(bookTable);
-
+    view.appendChild(bookTable);
 }
 
 export default bookTableBtn;

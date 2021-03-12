@@ -1,5 +1,6 @@
+import bookingsPageLoader from './modules/bookingsPage';
 import homePageLoader from './modules/homePage';
 
-window.onload = homePageLoader(); //on load show homepage
+window.onload = bookingsPageLoader(); //on load show homepage
 
 

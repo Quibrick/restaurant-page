@@ -57,7 +57,7 @@ function homePageLoader() {
     pageCreator("home-page");
     navBar("home-page");
     restaurantLogo();
-    bookTableBtn();
+    bookTableBtn("home-page");
     socialMedia();
 }
 
