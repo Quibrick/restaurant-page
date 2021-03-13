@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#content{
+    position: relative;
+}
+
 #home-page{
     width: 100vw;
     height: 100vh;
@@ -138,6 +142,11 @@
     top: 150px;
 }
 
+#about-page{
+    width: 100vw;
+    height: 100vh;
+}
+
 #about-us{
     color: black;
     font-size: 36px;
@@ -152,7 +161,6 @@
     width: 100px;
     margin: auto;
     color: #BB7E37;
-    
 }
 
 #bold-description{
@@ -182,8 +190,13 @@
     position: relative;
 }
 
+#bookings-page{
+    width: 100vw;
+    height: 100vh;
+}
+
 #bookings-form{
-    border: 3px solid red;
+    margin-top: 25px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2,1fr);
@@ -214,6 +227,38 @@ input{
     color: white;
     font-weight: 900;
     font-size: 15px;
+}
+
+#form-container{
+
+    width: 600px;
+    height: 400px;
+}
+
+#book-a-table{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+}
+
+#book-a-table-hr{
+    border: solid 3px;
+    width: 100px;
+    margin: auto;
+    color: #BB7E37;
+}
+
+#menu-page{
+    width: 100vw;
+    height: 100vh;
+}
+
+#menu-container{
+    display: grid;
+    width: 800px;
+    height: 800px;
+
 }
 
 @media(max-width:640px){

@@ -4,9 +4,24 @@ import pageCreator from "./pageViewCreator";
 function bookingsPageForm() {
 
     const bookingsPage = document.getElementById("bookings-page");
+
+    const formContainer = document.createElement("div");
+    formContainer.id = "form-container";
     
     const form = document.createElement("form");
     form.id = "bookings-form";
+    
+
+    const title = document.createElement("div");
+    title.id = "book-a-table";
+    title.innerHTML = "BOOK A TABLE";
+
+    const hr = document.createElement("hr");
+    hr.id = "book-a-table-hr";
+    title.appendChild(hr);
+
+
+    formContainer.appendChild(title);
 
     const nameLabel = document.createElement("label");
     nameLabel.setAttribute("for", "name");
@@ -88,8 +103,16 @@ function bookingsPageForm() {
 
     form.appendChild(submitBtn);
 
+    formContainer.appendChild(form);
 
-    bookingsPage.appendChild(form);
+    bookingsPage.appendChild(formContainer);
+}
+
+function footer(){
+
+    const bookingsPage = document.getElementById("bookings-page");
+
+    
 }
 
 

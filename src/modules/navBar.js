@@ -2,6 +2,7 @@ import clearWindow from './clearWindow';
 import homePageLoader from './homePage';
 import aboutPageLoader from './aboutPage';
 import bookingsPageLoader from './bookingsPage';
+import menuPageLoader from './menuPage';
 
 //navigation bar logic and functionality, appends itself on the head of each view based on arg : id
 function navBar(id) {
@@ -38,24 +39,32 @@ function navBar(id) {
 
     //event listeners for each button
     const aboutBtn = document.getElementById("about-btn");
-    aboutBtn.addEventListener("click", () =>{
+    aboutBtn.addEventListener("click", () => {
 
         clearWindow();
         aboutPageLoader();
     });
 
-    const homeBtn = document.getElementById('home-btn');
-    homeBtn.addEventListener('click', () =>{
+    const homeBtn = document.getElementById("home-btn");
+    homeBtn.addEventListener("click", () => {
 
         clearWindow();
         homePageLoader();
     });
 
-    const bookingsBtn = document.getElementById('bookings-btn');
-    bookingsBtn.addEventListener('click', () =>{
+    const bookingsBtn = document.getElementById("bookings-btn");
+    bookingsBtn.addEventListener("click", () => {
         
         clearWindow();
         bookingsPageLoader();
+    })
+
+    const menuBtn = document.getElementById("menu-btn");
+    menuBtn.addEventListener("click", () => {
+
+        clearWindow();
+        menuPageLoader();
+
     })
 
 }
