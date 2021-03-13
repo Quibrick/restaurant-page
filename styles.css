@@ -255,9 +255,13 @@ input{
 }
 
 #menu-container{
+    border: 5px solid black;
+    margin: auto;
+    align-items: center;
     display: grid;
-    width: 800px;
-    height: 800px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
 
 }
 
