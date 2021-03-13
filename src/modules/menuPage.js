@@ -2,13 +2,25 @@ import MenuItem from "./menuItemClass";
 import navBar from "./navBar";
 import pageCreator from "./pageViewCreator";
 
-function title() {
+function tabs() {
+
+    const menuPage = document.getElementById("menu-page");
+
+    const tabsContainer = document.createElement("div");
+
+    const title = document.createElement("h2");
+    title.innerHTML = "OUR MENU";
+
+    const tabs = ['STARTERS', 'PIZZA', 'PASTA', 'DESERT', 'ALCOHOL'];
+    
 
 
+    tabsContainer.appendChild(title);
+    menuPage.appendChild(tabsContainer);
 }
 
 
-function menu() {
+function menu(id) {
 
     const menuPage = document.getElementById("menu-page");
 
@@ -16,14 +28,14 @@ function menu() {
     menuContainer.id = "menu-container";
 
     const col = 3;
-    const row = 7;
+    const row = 5;
     menuContainer.style.gridTemplateColumns = `repeat(${col}, 1fr)`;
     menuContainer.style.gridTemplateRows = `repeat(${row}, 1fr)`;
 
     for (let i = 0; i < col; i++){
         for (let j = 0; j < row; j++){
             
-            const menuItemObj = new MenuItem("Pizza","Special pizza with mushroms","12 $");
+            const menuItemObj = new MenuItem(`${id}`,"Lore ipsum, dolor sit amet, consectetur adipiscing elit ","12 $");
             const menuItemContainer = document.createElement("div");
             
             const title = document.createElement("h2");
@@ -48,15 +60,13 @@ function menu() {
 
 
     menuPage.appendChild(menuContainer);
-
-    
-
 }
 
 function menuPageLoader(){
     pageCreator("menu-page");
     navBar("menu-page");
-    menu();
+    tabs();
+    menu("Pizza");
 }
 
 export default menuPageLoader;

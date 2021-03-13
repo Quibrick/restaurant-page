@@ -17,7 +17,7 @@ function restaurantLogo() {
 
     const name = document.createElement("h3");
     name.id = ("restaurant-name");
-    name.innerHTML = "THE LATERN BISTRO";
+    name.innerHTML = "THE LATERN";
     
     const hr = document.createElement("hr");
     hr.id = "restaurant-underline";
