@@ -8,17 +8,23 @@ function tabs() {
 
     const tabsContainer = document.createElement("div");
 
+    const titleContainer = document.createElement("div");
+    titleContainer.id = "menu-title-container";
+
     const title = document.createElement("h2");
     title.innerHTML = "OUR MENU";
+    title.id = "menu-title";
 
-    const tabs = ['STARTERS', 'PIZZA', 'PASTA', 'DESERT', 'ALCOHOL'];
+    const hr = document.createElement("hr");
+    hr.id = "menu-hr"
     
+    title.appendChild(hr);
 
+    titleContainer.appendChild(title);
 
-    tabsContainer.appendChild(title);
+    tabsContainer.appendChild(titleContainer);
     menuPage.appendChild(tabsContainer);
 }
-
 
 function menu(id) {
 
@@ -55,9 +61,6 @@ function menu(id) {
 
         }
     }
-
-
-
 
     menuPage.appendChild(menuContainer);
 }

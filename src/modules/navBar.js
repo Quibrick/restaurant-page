@@ -20,9 +20,7 @@ function navBar(id) {
         
         'BOOKINGS',
 
-        'MENU',
-
-        'CONTACT'
+        'MENU'
     ];
 
     //create nav-bar buttons with proper id tags

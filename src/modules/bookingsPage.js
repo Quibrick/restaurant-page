@@ -5,13 +5,20 @@ function bookingsPageForm() {
 
     const bookingsPage = document.getElementById("bookings-page");
 
+    const container = document.createElement("div");
+    container.id = "bookings-container";
+
+    const photo = document.createElement("div");
+    photo.id = "bookings-photo";
+
+    container.appendChild(photo);
+
     const formContainer = document.createElement("div");
     formContainer.id = "form-container";
     
     const form = document.createElement("form");
     form.id = "bookings-form";
     
-
     const title = document.createElement("div");
     title.id = "book-a-table";
     title.innerHTML = "BOOK A TABLE";
@@ -105,7 +112,9 @@ function bookingsPageForm() {
 
     formContainer.appendChild(form);
 
-    bookingsPage.appendChild(formContainer);
+    container.appendChild(formContainer)
+
+    bookingsPage.appendChild(container);
 }
 
 function footer(){

@@ -195,13 +195,33 @@
     height: 100vh;
 }
 
+#bookings-container{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bookings-photo{
+    box-shadow: 2px 3px 19px 5px rgba(0,0,0,0.41)    ;
+    background-image: url('./img/Photo\ by\ Helena\ Lopes\ from\ Pexels.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 750px;
+    height: 500px;
+
+}
+
 #bookings-form{
-    margin-top: 25px;
+    top: 100px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2,1fr);
     width: 600px;
     height: 300px;
+    position: relative;
 }
 
 input{
@@ -236,6 +256,8 @@ input{
 }
 
 #book-a-table{
+    position: relative;
+    top: 50px;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
@@ -255,14 +277,34 @@ input{
 }
 
 #menu-container{
-    border: 5px solid black;
-    margin: auto;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     align-items: center;
+    text-align: center;
     display: grid;
+    row-gap: 60px;
     width: auto;
     margin-left: 60px;
     margin-right: 60px;
 
+}
+
+#menu-hr{
+    border: solid 3px;
+    width: 100px;
+    margin: auto;
+    color: #BB7E37;
+}
+
+#menu-title{
+    text-align: center;
+}
+
+#menu-title-container{
+    position: relative;
+    top: 80px;
+    font-size: 22px;
 }
 
 @media(max-width:640px){
