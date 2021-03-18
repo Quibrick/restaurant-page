@@ -1,4 +1,4 @@
-# Simple non responsive Restaurant Page (Front-end using only vanilla JS)#
+# Simple non responsive Restaurant Page (Front-end using only vanilla JS)
 
 This is a simple static page-project for a fictional restaurant. This project was created for The Odin Project course. The **main focus** of this project is **creating** and **manupaliting the DOM using Javascript** only aswell as using **modules introduced in ES6**.
 
