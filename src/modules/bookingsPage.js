@@ -117,14 +117,6 @@ function bookingsPageForm() {
     bookingsPage.appendChild(container);
 }
 
-function footer(){
-
-    const bookingsPage = document.getElementById("bookings-page");
-
-    
-}
-
-
 function bookingsPageLoader() {
 
     pageCreator("bookings-page");

@@ -62,9 +62,7 @@ function navBar(id) {
 
         clearWindow();
         menuPageLoader();
-
     })
-
 }
 
 
